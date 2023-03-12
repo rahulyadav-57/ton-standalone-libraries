@@ -1,0 +1,23 @@
+{
+  "name": "ton-standalone-libraries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Sandbox": "browserify sandbox.js -o ./dist/sandbox.js",
+    "TonCore": "browserify ton-core.js -o ./dist/ton-core.js",
+    "build": "npm run Sandbox && npm run TonCore && npm run TonContractExecutor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ton-community/sandbox": "^0.5.1",
+    "browserify": "^17.0.0",
+    "buffer": "^6.0.3",
+    "ton-core": "^0.48.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}
